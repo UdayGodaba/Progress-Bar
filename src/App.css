@@ -1,0 +1,50 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+.header {
+  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.progressBar {
+  border: 2px solid black;
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.progressBar > span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+}
+
+.progressBar > div {
+  position: absolute;
+  background-color: greenyellow;
+  height: 100%;
+  width: var(--value);
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .progressBar {
+    width: 100%;
+  }
+  .header {
+    font-size: x-large;
+    margin-bottom: 10%;
+  }
+}
