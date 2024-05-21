@@ -24,6 +24,11 @@
   align-items: center;
 }
 
+.progressState {
+  margin-top: 2%;
+  font-family: "Courier New", Courier, monospace;
+}
+
 .progressBar > span {
   position: absolute;
   width: 100%;
@@ -46,5 +51,8 @@
   .header {
     font-size: x-large;
     margin-bottom: 10%;
+  }
+  .progressState {
+    margin-top: 4%;
   }
 }

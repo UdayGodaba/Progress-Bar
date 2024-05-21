@@ -15,6 +15,9 @@ function App() {
     <div className="app">
       <div className="header">Progress Bar</div>
       <ProgressBar value={value} />
+      <div className="progressState">
+        {value != 100 ? "Loading..." : "Loaded"}
+      </div>
     </div>
   );
 }
